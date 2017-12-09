@@ -1,6 +1,9 @@
 # Todo Flask App
 
 from flask import Flask
+from flask import render_template
+from pprint import pprint
+
 app = Flask(__name__)
 
 all_todos = [
@@ -19,5 +22,6 @@ def index():
     return 'All Todos'
 
 @app.route("/welcome")
-def welcome():
-    return "Welcome to Todo Flask!"
+def welcome(name="Calvin"):
+    return render_template('welcome.html', name=name)
+
