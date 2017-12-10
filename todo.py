@@ -8,11 +8,10 @@ import json
 app = Flask(__name__)
 
 def get_todos():
-    todos = {}
+    todos = []
     with open('./data/todos.json') as json_data:
         d = json.load(json_data)
         json_data.close()
-        print(d["todos"])
         todos = d["todos"]
     return  todos
 
