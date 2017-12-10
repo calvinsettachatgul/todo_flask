@@ -1,0 +1,12 @@
+<!doctype html>
+<title>Todo Flask</title>
+{% if todos %}
+    <h1>All Todos</h1>
+    <u1>
+        {% for todo in todos %}
+            <li>{{todo}}</li>
+        {% endfor %}
+    </u1>
+{% else %}
+    <h1>There are no Todos yet!</h1>
+{% endif %}
