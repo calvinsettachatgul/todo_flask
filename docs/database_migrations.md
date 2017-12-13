@@ -1,11 +1,12 @@
 #### Todo
-*     title (Text)
-*     description (Text)
-*     priority (Number)
-*     status (Text) eg (completed, inprogress, complete, freezer)
-*     dueDate (Date)
 
-create table todos (
+* title (Text)
+* description (Text)
+* priority (Number)
+* status (Text) eg (completed, inprogress, complete, freezer)
+* dueDate (Date)
+
+    create table todos (
 
     title varchar(40),
 
@@ -16,4 +17,4 @@ create table todos (
     status varchar(40), 
 
     dueDate timestamp  
-);
+    );
