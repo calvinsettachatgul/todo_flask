@@ -1,10 +1,10 @@
 #### Todo
-
 * title (Text)
 * description (Text)
 * priority (Number)
 * status (Text) eg (completed, inprogress, complete, freezer)
 * dueDate (Date)
+
 
     create table todos (
 
