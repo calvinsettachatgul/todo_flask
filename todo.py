@@ -31,8 +31,12 @@ class Todo(db.Model):
     status = db.Column(db.String(120))
     date = db.Column(db.String(120))
 
-    def __init__(self, email):
-        self.email = email
+    def __init__(self, title, description, priority, status, date):
+        self.title = title
+        self.description = description
+        self.priority = priority
+        self.status = status
+        self.date = date
 
     def __repr__(self):
         return '<E-mail %r>' % self.email
